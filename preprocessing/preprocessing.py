@@ -2,6 +2,9 @@ import re
 from nltk.corpus import stopwords
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
+import nltk
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 with open('tokenizer/tokenizer.pkl', 'rb') as f:
     loaded_tokenizer = pickle.load(f)
