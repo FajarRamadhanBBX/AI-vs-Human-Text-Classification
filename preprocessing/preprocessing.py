@@ -3,7 +3,7 @@ from nltk.corpus import stopwords
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 
-with open('./tokenizer/tokenizer.pkl', 'rb') as f:
+with open('/tokenizer/tokenizer.pkl', 'rb') as f:
     loaded_tokenizer = pickle.load(f)
     
 special_char = re.compile(r'[^a-zA-Z0-9\s]')

@@ -5,7 +5,7 @@ from preprocessing.preprocessing import preprocess_text
 
 st.title("Human vs AI Text Generator Classification")
 
-model = load_model('./model/model.keras')
+model = load_model('/model/model.keras')
 
 st.write("Input text to classify:")
 input_text = st.text_area("Text Input", height=200)
